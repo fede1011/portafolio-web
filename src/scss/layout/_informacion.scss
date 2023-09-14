@@ -1,0 +1,86 @@
+@use'base/variables';
+@use 'base/mixins';
+
+
+.info--personal {
+
+    background-color: variables.$background_pag1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.contenedor--personal {
+
+    padding: 100px;
+
+    .text--personal {
+
+        font-size: 24px;
+        font-weight: 700;
+        padding: 5px 5px;
+        
+    }
+
+    .text--personal--two {
+
+        font-size: 18px;
+    }
+
+}
+
+.box--info--proyectos {
+
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+
+    .text--proyecto {
+
+        font-weight: 700;
+    }
+
+    .btn--proyectos {
+
+        width: 110px;
+        color: variables.$color_text_pagOne;
+        border: solid 1px variables.$border_box;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 4px 4px 4px;
+
+        @include mixins.tablet {
+
+            margin-top: 10px;
+        }
+
+        
+    }
+
+    @include mixins.tablet {
+
+        @include mixins.grid(2 , 10px);
+        align-items: center;
+        border: solid 1px variables.$border_box;
+        border-radius: 12px 12px 12px;
+
+        .btn--proyectos {
+
+            margin-left: 50%;
+        }
+
+    }
+  
+}
+
+.btn--proyectos:hover {
+
+    background-color: variables.$border-btn-hover;
+    color: variables.$parrafo_color;
+    font-weight: 700;
+    
+}
+
+
+

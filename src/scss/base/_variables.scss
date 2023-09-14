@@ -1,0 +1,43 @@
+
+
+// Fuente principal.
+
+$fuente_prinicipal: 'Open Sans', sans-serif;
+
+// colores- header
+
+$background_pag1:rgba(0, 41, 80, 0.692);
+$color_header:rgb(255, 255, 255);
+$color_text_nav:rgb(0,0,0);
+$color_text_pagOne:rgb(255,255,255);
+
+//colores - servicios
+
+$color_servicios:rgb(255, 255, 255);
+$parrafo_color:rgba(0, 41, 80, 0.692);
+$border_btn_servicios:rgba(99, 98, 98, 0.342);
+$background_btn:rgba(0, 41, 80, 0.692);
+
+//colores - infoormacion personal
+
+$background_pag1:rgba(0, 41, 80, 0.692);
+$color_text_pagOne:rgb(255,255,255);
+$border_box:rgb(255, 255, 255);
+$border_btn:rgb(255, 253, 253);
+$border-btn-hover:rgb(255, 253, 253);
+
+// colores - formualario {
+
+$color_text_form:rgb(0, 41, 80);
+$color_btn_form:rgb(255, 255, 255);
+$border_btn_form:rgb(0, 41, 80);
+$background_btn_hover:rgba(0, 41, 80);
+
+
+// Media Queries.
+
+
+$phone: 480px;
+$tablet: 768px;
+$desktop:992px;
+$desktop_XL : 1200px;

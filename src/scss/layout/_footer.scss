@@ -1,0 +1,50 @@
+@use'base/variables';
+@use 'base/mixins';
+
+footer {
+
+
+    width: 100%;
+    padding: 30px;
+    background-color: variables.$background_pag1;
+
+    .contenedor--footer {
+
+        @include mixins.tablet {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        
+    }
+
+    .contenedor--iconos {
+
+        display: block;
+        text-align: center;
+
+        @include mixins.tablet {
+    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+.text--footer {
+
+    display: block;
+    text-align: center;
+
+    .name--desarrollador {
+
+        color: variables.$color_text_pagOne;
+        font-size: 18px;
+    }
+
+}
+
+
+

@@ -1,0 +1,22 @@
+{
+  "name": "sitio-web",
+  "version": "1.0.0",
+  "description": "Sitio Web",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "keywords": [
+    "fede",
+    "web"
+  ],
+  "author": "Federico Rodriguez Tovar",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.49.9"
+  }
+}

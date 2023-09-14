@@ -1,0 +1,101 @@
+@use'base/variables';
+@use 'base/mixins';
+
+
+
+
+.info--servicios {
+
+    
+    width: 100%;
+    padding: 50px 0;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color:variables.$color_servicios;
+
+    h2 {
+
+        color:variables.$parrafo_color;
+        margin-top: 30px;
+        font-family: variables.$fuente_prinicipal;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+
+    .title--servicio {
+        margin-top: 20px;
+        color:variables.$parrafo_color;
+        font-size: 24px;
+    }
+
+    .text--servicio {
+
+        color:variables.$parrafo_color;
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -30px;
+    }
+}
+
+.contenedor--servicios {
+
+    width: 100%;
+    display: block;
+    text-align: center;
+
+    @include mixins.tablet {
+
+        @include mixins.grid(3 , 5px);
+    }
+
+}
+
+.btn--primario {
+
+    border: solid 1px variables.$border_btn;
+    display: block;
+    padding: 10px;
+    box-shadow: 2px 2px rgba(96, 97, 97, 0.199);
+    font-size: 18px;
+    font-weight: 650;
+    color: variables.$background_btn;
+    border-radius: 4px 4px 4px;
+  
+
+    @include mixins.tablet {
+
+        @include mixins.grid(3 , 5px);
+        display: inline-block;
+        
+      
+    }
+
+}
+
+.btn--primario:hover {
+
+    background-color: variables.$background_btn;
+    color:variables.$color_servicios;
+}
+
+.servicio--DiseñoWeb,.servicio--DesarrolloWeb,.DesarrolloMovil {
+
+    margin-bottom: 40px;
+
+    @include mixins.tablet {
+
+       margin-bottom: 0 ;
+       border-right: solid 2px variables.$border_btn_servicios;
+       
+    }
+
+}
+
+
+
+
+    
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <title>Sitio Web</title>
+</head>
+<body>  
+
+    <!-- header -->
+    <header class="header">
+        <div class="contenedor contenedor--header">
+            <div class="contenedor--logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <nav class="navegacion--principal">
+                <a href="#servicios">Servicios</a>
+                <a href="#sobreMi">Sobre Mi</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <!-- fin--header -->
+
+
+    <!-- main -->
+    <section class="section--bienvenido">
+        <div class="contenedor contenedor-section">
+            <h1>
+                {Bienvenido}
+            </h1>
+            <p>
+                Gracias por visitar mi sitio web <br>
+                Por favor, te invito a que conozcas todo mi sitio web. Muchas gracias
+            </p>
+
+            <a href="" class="btn btn--contacto">Contacto</a>
+        </div>
+    </section>
+    <!-- fin--main -->
+
+    <!-- Servicios -->
+
+    <section class="info--servicios" id="servicios">
+        <h2>{Servicios}</h2>
+
+        <div class="contenedor--servicios">
+            <div class="servicio--DiseñoWeb">
+                <img src="img/diseñoWeb.svg" alt="">
+                <h3 class="title--servicio">Diseño Web</h3>
+                <p class="text--servicio">Aquí podre ayudarte a Diseñar la pagina web con la que sueñas para tu negocio, 
+                    usando herramientas como HTML5, CSS3 y entre otras más
+                </p>
+                <a href="" class="btn btn--primario">Ver más</a>                
+            </div>
+            <div class="servicio--DesarrolloWeb">
+                <img src="img/desarrolloWeb.svg" alt="">
+                <h3 class="title--servicio">Desarrollo Web</h3>
+                <p class="text--servicio">Aquí podre ayudarte a desarrollar tu pagina web, guiándome con el diseño de tu pagina, 
+                    y de esa forma subirla a la web para que las personas interactúen con ella
+                </p>
+                <a href="" class="btn btn--primario">Ver más</a>
+            </div>
+            <div class="servicio--DesarrolloMovil">
+                <img src="img/desarrolloMovil.svg" alt="">
+                <h3 class="title--servicio">Desarrollo Movil</h3>
+                <p class="text--servicio">Aquí podre ayudarte a desarrollar tu aplicación móvil.
+
+                </p>
+                <a href="" class="btn btn--primario">Ver más</a>
+            </div>
+        </div>
+    </section>
+    <!-- Fin--Servicios -->
+
+    <!-- informacion personal -->
+
+    <section class="info--personal" id="sobreMi">
+
+        <div class="contenedor--personal">
+            <p class="text--personal">
+                ¡Hola! Yo soy Federico. <br> Te agradezco que visites mi sitio web.
+            </p>
+            <p class="text--personal--two">
+                Yo vivo en la ciudad de Bogotá D.C. Me dedico al Desarrollo de Software desde el 2022. 
+                y esté proyecto se inicio desde mi casa, con el propósito en ayudarte a crear la pagina web que deseas. 
+                Lo que más me apasiona de todo esto es el Desarrollo Front-End.
+            </p>
+
+            <div class="box--info--proyectos">
+                <p class="text--proyecto">
+                    ¿Quieres ver mis proyectos?
+                </p>
+                <a href="#" class="btn--proyectos">Proyectos</a>
+            </div>
+        </div>
+    </section>
+    <!-- fin--informacion personal -->
+
+    <!-- Formulario -->
+
+    <section class="formulario" id="contacto">
+
+        <div class="contenedor contenedor--formulario">
+
+            <div class="info--formulario">
+                <p class="text--formulario">Si estás interesado en contactarme <br>
+                    Por favor completa el siguiente formulario
+                </p>
+            <div class="iconos--formulario">
+                <img src="img/icono-logo-form.svg" alt="">
+            </div>
+            </div>
+
+            <form class="contacto--formulario" id="form">
+                <h2 class="title--formulario">Formulario</h2>
+                <div class="campo">
+                    <label for="nombre--apellidos" class="campo__label">Nombre y Apellidos*</label>
+                     <input class="campo__input" type="text" placeholder="" id="nombre" /> 
+                </div>
+                <div class="campo">
+                    <label for="email" class="campo__label">Email*</label>
+                     <input class="campo__input" type="email" placeholder="" id="email" /> 
+                </div>
+
+                <div class="campo">
+                    <label  class="campo__label" for="mensaje">Mensaje</label>
+                    <textarea class="campo__input--textarea " id="mensaje"></textarea>
+                  </div>
+
+                <div class="campo">
+                    <input type="submit" type="reset" value="Enviar" class="btn boton--enviar" />
+                  </div>
+            </form>
+        </div>
+    </section>
+    <!-- fin--Formulario -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="contenedorFooter contenedor--footer">
+            <div class="contenedor--iconos">
+                <img src="img/icono-logo.svg" alt="">
+                <img src="img/icono-logo-ins.svg" alt="">
+                <img src="img/icono-logo-git.svg" alt="">
+            </div>
+            <div class="text--footer">
+                <p class="name--desarrollador">Federico Rodríguez Tovar</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -- fin -->
+
+    <!-- Archivo JavaScript -->
+    <script src="build/js/app.js"></script>
+
+</body>
+</html>

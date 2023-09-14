@@ -1,0 +1,154 @@
+@use'base/variables';
+@use 'base/mixins';
+
+.formulario {
+
+    width: 100%;
+    padding: 20px;
+    background-color: variables.$color_text_pagOne;
+    margin-bottom: 30px;
+
+    .contenedor--formulario {
+
+        display: block;
+        align-items: center;
+
+        @include mixins.tablet {
+
+            @include mixins.grid( 2 , 20px);
+        }
+    }
+
+}
+
+.info--formulario {
+
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 20px;
+
+    .iconos--formulario {
+
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+
+
+}
+
+.text--formulario {
+
+    color:variables.$color_text_form;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    
+    @include mixins.tablet {
+
+        text-align: left;
+    }
+}
+
+.contacto--formulario {
+
+    width: 100%;
+    border: solid 1px variables.$border_btn_form;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+
+    .campo {
+
+        padding: 20px;
+    }
+
+    .campo__input {
+
+        border: none;
+        border-bottom: solid 1px variables.$border_btn_form;
+        width: 100%;
+        margin-top: 15px;
+        padding: 5px;
+    }
+
+    .campo__input--textarea {
+
+        width: 100%;
+        height: 150px;
+        margin-top: 15px;
+        padding: 5px;
+        border:solid 1px variables.$border_btn_form ;
+    }
+
+    .boton--enviar {
+
+        width: 100%;
+        padding: 10px;
+
+        @include mixins.tablet {
+
+            display: flex;
+            justify-content: center;
+            width: 100px;
+
+        }
+    }
+
+}
+
+.title--formulario {
+
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+    font-size: 28px;
+    padding: 5px;
+    color:variables.$border_btn_form;
+}
+
+.btn {
+
+    background-color: variables.$color_btn_form;
+    border: solid 1px variables.$border_btn_form;
+    border-radius: 7px;
+    color: variables.$color_text_form;
+    font-weight: 599;
+
+}
+
+.btn:hover {
+
+    background-color: variables.$background_btn_hover;
+    color:variables.$color_btn_form;
+}
+
+// JavaScript correcto y error.
+
+.correcto {
+
+    background-color: variables.$background_pag1;
+    color: variables.$color_text_pagOne;
+    padding: 10px;
+    text-align: center;
+    font-family: variables.$fuente_prinicipal;
+}
+
+.error {
+
+    background-color: variables.$color_servicios;
+    color: variables.$parrafo_color;
+    padding: 10px;
+    text-align: center;
+    font-family: variables.$fuente_prinicipal;
+    font-weight: 700;
+    border: solid 1px variables.$border_btn_form;
+
+}
+
+
+
+
